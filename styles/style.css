@@ -76,7 +76,7 @@ text-align: left;
 .featured{
     padding: 20px 150px;
 }
-.featured >p{
+.featured >p, .instagram > p {
       text-align: center;
       width: 390px;
       margin: 0 auto;
@@ -143,15 +143,29 @@ text-align: left;
 .icon-img{
     text-align: center;
 }
+
+/* instagram section related style */
+
+.instagram-img-container{
+    display: flex;
+    gap: 20px;
+    padding: 10px 150px;
+}
+
+.instagram-img img{
+    width: 230px;
+}
 @media screen and (max-width:576px) {
-    .header-container, .flower-container, .hot-deal-container, .icon-container{
+    .header-container, .flower-container, .hot-deal-container,
+     .icon-container, .instagram-img-container{
         flex-direction: column;
         padding: 12px  12px;
        
     }
-    .header-img img, .icon-container {
+    .header-img img, .icon-container  {
         width: 330px;
     }
+   
     .header-content{
         width: 380px;
         text-align: center;
@@ -159,6 +173,9 @@ text-align: left;
     }
     .featured{
         padding: 0 0;
+    }
+    .instagram-img img{
+        width: 385px;
     }
     
 }
