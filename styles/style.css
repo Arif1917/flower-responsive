@@ -127,14 +127,30 @@ text-align: left;
 .deal-button {
     text-align: center;
 }
+
+/* icon section added */
+
+.icon-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+    background: rgba(39, 39, 39, 0.05);
+    padding: 57px 118px;
+    width: 730px;
+    margin: 0 auto;
+}
+.icon-img{
+    text-align: center;
+}
 @media screen and (max-width:576px) {
-    .header-container, .flower-container, .hot-deal-container{
+    .header-container, .flower-container, .hot-deal-container, .icon-container{
         flex-direction: column;
         padding: 12px  12px;
        
     }
-    .header-img img {
-        width: 230px;
+    .header-img img, .icon-container {
+        width: 330px;
     }
     .header-content{
         width: 380px;
